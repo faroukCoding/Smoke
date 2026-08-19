@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0b0b0d;
+    color: #f4f4f5;
+    overflow-x: hidden;
+  }
+
+  /* Arabic typography when dir="rtl" */
+  [dir="rtl"] {
+    font-family: 'Cairo', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.font-heading {
+  font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+}
+
+[dir="rtl"] .font-heading {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 800;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111115;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316;
+}
+
+/* Subtle glow effects */
+.glow-amber {
+  box-shadow: 0 0 25px -5px rgba(249, 115, 22, 0.35);
+}
+
+.glow-amber-sm {
+  box-shadow: 0 0 15px -3px rgba(249, 115, 22, 0.25);
+}
+
+.glow-red-sm {
+  box-shadow: 0 0 15px -3px rgba(220, 38, 38, 0.3);
+}
+
+.smoked-border {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.smoked-border-active {
+  border: 1px solid rgba(249, 115, 22, 0.4);
+}
+
+.smoked-card {
+  background: linear-gradient(180deg, rgba(26, 26, 32, 0.9) 0%, rgba(17, 17, 21, 0.95) 100%);
+  backdrop-filter: blur(8px);
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.04);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+

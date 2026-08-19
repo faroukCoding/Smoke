@@ -1,0 +1,6 @@
+{
+  "name": "Smoke Me - Agneau Fumé",
+  "description": "Restaurant spécialisé dans la viande d'agneau fumée (Agneau Fumé). Commandez en ligne facilement avec livraison ou à emporter via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
